@@ -9,4 +9,14 @@ public class ArrayWrk {
         int[] concated = concatArray(testArr, copyTestArr);
         System.out.println(concated.compare({1,2,3,4,1,2,3,4}));
     }
+
+    public static String arrayToString(int[] arr) {
+        String res = "[";
+        for (int i = 0; i < arr.length; i++) {
+            res += arr[i];
+            if (i < arr.length-1)
+                res += ", ";
+        }
+        return res + "]";
+    }
 }
