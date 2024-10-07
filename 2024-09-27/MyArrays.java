@@ -46,7 +46,7 @@ public class ArrayWrk {
         return res;
     }
     public static int[][] copyArr(int[][] arr) {
-        int[][] res = new int[][];
+        int[][] res = new int[arr.length][];
         for (int i = 0; i < arr.length; i++) {
             res[i] = copy1D(arr[i]);
         }
