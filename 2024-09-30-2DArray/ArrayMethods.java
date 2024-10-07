@@ -54,4 +54,18 @@ public class ArrayMethods {
       }
       return res;
   }
+    public static int[] copy1D(int[] arr) {
+        int[] res = new int[arr.length];
+        for (int i = 0; i < arr.length; i++) {
+            res[i] = arr[i];
+        }
+        return res;
+    }
+    public static int[][] copyArr(int[][] arr) {
+        int[][] res = new int[arr.length][];
+        for (int i = 0; i < arr.length; i++) {
+            res[i] = copy1D(arr[i]);
+        }
+        return res;
+    }
 }
