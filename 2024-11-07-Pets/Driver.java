@@ -1,3 +1,4 @@
+// First, we tried to use name in the method, but it was a private variable only accessible to the parent class. Then, we tried to use getName(), but that didn't work either.
 // Axel Stahl
 // Amy Zhou
 public class Driver {
