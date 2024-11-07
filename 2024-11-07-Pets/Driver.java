@@ -1,4 +1,4 @@
-// First, we tried to use name in the method, but it was a private variable only accessible to the parent class. Then, we tried to use getName(), but that didn't work either.
+// First, we tried to use name in the method, but it was a private variable only accessible to the parent class. But it worked when we used the getName method from superClass and it updated the speak method.
 // Axel Stahl
 // Amy Zhou
 public class Driver {
