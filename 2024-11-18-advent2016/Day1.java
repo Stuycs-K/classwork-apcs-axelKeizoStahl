@@ -2,7 +2,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class TriangleTester {
+public class Day1 {
     public static void main (String[] args) {
         System.out.println("Number of shortest path: "+day1("input.txt"));
     }
