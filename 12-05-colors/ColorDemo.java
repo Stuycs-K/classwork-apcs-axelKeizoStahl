@@ -25,11 +25,11 @@ public class ColorDemo {
 
         int[] colors = {RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE};
         
-        for (int i = 0; i < 10; i++) {  // Reduced the number of iterations
+        for (int i = 0; i < 10; i++) { 
             System.out.print(CLEAR_SCREEN);
             for (int j = 0; j < colors.length; j++) {
                 color(colors[(i + j) % colors.length], BLACK);
-                System.out.print(art);  // Print the ASCII art
+                System.out.print(art);
             }
             System.out.print("\u001b[0m");
             sleep(200);
