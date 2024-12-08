@@ -1,7 +1,14 @@
 public class Driver {
     public static void main(String[] args) {
-        Adventurer p1 = new Warrior("Bob",10);
-        Adventurer p2 = new Warrior("Joe",10);
-        p1.attack(p2);
+        Adventurer w1 = new Warrior("Thor", 25, 12);
+        System.out.println(w1.getName() + " is a Warrior with " + w1.getName() + " specials left.");
+        Adventurer w2 = new Warrior("Loki", 25, 12);
+        
+        System.out.println(w2.attack(w1));
+        System.out.println(w2.attack(w1));
+        
+        System.out.println(w1.support(w2));
+        System.out.println(w1.getName() + " is a Warrior with " + w1.getName() + " specials left.");
     }
 }
+
