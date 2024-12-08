@@ -17,36 +17,44 @@ public class Warrior extends Adventurer {
         maxSpecial = special;
     }
 
+    @Override
     public String getSpecialName() {
         return "PowerSlash";
     }
 
+    @Override
     public int getSpecial() {
         return special;
     }
 
+    @Override
     public void setSpecial(int n) {
         special = n;
     }
 
+    @Override
     public int getSpecialMax() {
         return maxSpecial;
     }
 
+    @Override
     public String attack(Adventurer other) {
         other.applyDamage(1);
         return getName() + " attacks " + other.getName() + ", boom!";
     }
 
+    @Override
     public String support(Adventurer other) {
         other.setHP(other.getHP() + 1);
         return getName() + " supports " + other.getName() + ", much better!";
     }
 
+    @Override
     public String support() {
         return support(this);
     }
 
+    @Override
     public String specialAttack(Adventurer other) {
         restoreSpecial(-1);
         return getName() + " uses " + getSpecialName() + " on " + other.getName() + ", " + attack(other);
