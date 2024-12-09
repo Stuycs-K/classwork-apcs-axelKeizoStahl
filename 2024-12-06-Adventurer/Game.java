@@ -11,6 +11,16 @@ class Game {
         Adventurer comp = new CodeWarrior("Computer", 10, "perl");
         Adventurer player = new Warrior("Bob", 10, 10);
         printStats(comp);
+        System.out.println();
         printStats(player);
+
+        while (true) {
+            System.out.println("Type: (a)ttack / (sp)ecial / (su)pport / quit");
+            System.out.print("Choice: ");
+            while (!userInput.hasNextLine()) {}
+            String choice = userInput.nextLine();
+            System.out.println(choice);
+        }
+
     }
 }
